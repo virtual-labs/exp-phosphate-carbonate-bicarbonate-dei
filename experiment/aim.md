@@ -1,1 +1,3 @@
-### Aim of the experiment
+### Aim
+
+To prepare Phosphate & Carbonate-Bicarbonate buffers at various pH values.
