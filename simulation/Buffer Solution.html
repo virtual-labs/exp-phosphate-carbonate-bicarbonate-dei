@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Ashutosh Singh Chauhan" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height,
+			initial-scale=1.0"
+    />
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="slplayer.js"></script>
+  </head>
+  <body>
+    <div id="BufferSolution" style="position: relative; height: 100%"></div>
+    <script type="text/javascript">
+      (function (Saola) {
+        var li = {
+          color: "#2090e6",
+          density: 14,
+          diameter: 248,
+          range: 1,
+          shape: "spiral",
+          speed: 3,
+        };
+        Saola.openDoc("Buffer Solution.js", "BufferSolution", {
+          paused: false,
+          preloaderOptions: li,
+          center: "horizontal",
+          autofit: true,
+        });
+      })(AtomiSaola);
+    </script>
+  </body>
+</html>

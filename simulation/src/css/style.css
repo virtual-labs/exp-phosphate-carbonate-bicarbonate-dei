@@ -1,0 +1,1007 @@
+#header {
+  background-color: white;
+  height: 100px;
+  width: 99vw;
+  border-bottom: 5px solid orangered;
+  position: sticky;
+  top: 0px;
+  z-index: 11;
+}
+
+footer {
+  position: relative;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.navigation-bar {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  color: #337AB7;
+  font-size: 25px;
+  top: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+.navigation-bar a {
+  color: #337AB7;
+  text-decoration: none;
+}
+
+.navigation-bar a:hover {
+  text-decoration: underline;
+}
+
+.side-nav {
+  position: relative;
+  height: 100%;
+  min-height: 300px;
+  width: 20vw;
+  min-width: 100px;
+  top: 20px;
+  float: left;
+}
+
+.nav-element {
+  height: 50px;
+}
+
+.nav-element a {
+  margin-left: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #3e6389;
+  font-size: 20px;
+  font-family: "Open sans", sans-serif;
+}
+
+.nav-element a:hover {
+  text-decoration: underline;
+  color: dark-blue;
+}
+
+.cp {
+  color: #ff6600;
+}
+
+.heading {
+  padding: 10px 20px;
+  text-align: center;
+  height: 100px;
+}
+
+.des a {
+  color: #007BFF;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.des a:hover {
+  text-decoration: underline;
+}
+
+.heading h1 {
+  color: #2C99CE;
+  font-family: "Raleway", sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-section {
+  position: relative;
+  height: auto;
+  width: 75vw;
+  display: inline-block;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+}
+
+.csection {
+  position: relative;
+  height: auto;
+  min-height: 250px;
+  width: 100%;
+}
+
+.des {
+  width: 95%;
+  height: 100%;
+  min-height: 250px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  left: 2.5%;
+  position: relative;
+  text-align: justify;
+}
+
+.des p {
+  font-size: 20px;
+}
+
+.des ol {
+  font-size: 20px;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  font-family: "Raleway", sans-serif;
+}
+
+.foot1 {
+  float: left;
+  width: 32%;
+  position: relative;
+  left: 1.5%;
+}
+
+.fheading h4 {
+  margin: 0;
+}
+
+.fheading {
+  height: 20px;
+  width: 100%;
+  padding: 5px 0;
+  color: whitesmoke;
+  border-width: 0.15rem;
+  border-style: solid;
+  border-image: linear-gradient(to right, #3ec1d5 20%, #555 0%) 0% 0% 100% 0%;
+  ;
+}
+
+.fdes a {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
+
+.fdes p {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
+
+
+.fdes a:hover {
+  text-decoration: underline;
+  color: gray;
+  transition-duration: 0.25s;
+}
+
+.foot2 {
+  display: inline-block;
+  width: 32%;
+  position: relative;
+  left: 3%;
+}
+
+.foot3 {
+  float: right;
+  width: 30%;
+  right: 1.5%;
+  position: relative;
+
+}
+
+.sm {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+}
+
+.desm {
+  display: flex;
+}
+
+.endfoot {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+  color: whitesmoke;
+}
+
+.endfoot a {
+  top: 5px;
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.endfoot a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.menu-btn .bar {
+  width: 25px;
+  height: 0.5px;
+  background-color: black;
+  margin: 8px 0;
+  position: relative;
+  left: 12.5px;
+}
+
+.menu-btn {
+  position: relative;
+  height: 100%;
+  width: 70px;
+  float: left;
+  outline: none;
+  border: none;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+}
+
+header img {
+  display: inline-block;
+  width: 140px;
+  height: 90px;
+  position: relative;
+  left: 40px;
+  top: 5px;
+}
+
+.right-head {
+  height: 50px;
+  top: 40px;
+  float: right;
+  position: relative;
+  right: 10px;
+}
+
+.right-head a {
+  text-decoration: none;
+  color: #2C98CD;
+  margin: 20px;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.right-head a:hover {
+  background-color: #77bb41;
+  border-radius: 5px;
+  color: white;
+  text-decoration: underline;
+  transition-duration: 0.1s;
+}
+
+@media screen and (max-width: 850px) {
+
+  .side-nav {
+    position: absolute;
+    background-color: white;
+    opacity: 1;
+    z-index: 10;
+    width: 60%;
+    left: 20%;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    display: none;
+    overflow-y: scroll;
+  }
+
+  .main-section {
+    width: 100%;
+  }
+
+  .foot1 {
+    float: left;
+    width: 45%;
+    position: relative;
+  }
+
+  .foot2 {
+    display: inline-block;
+    left: 6%;
+    width: 45%;
+    position: relative;
+  }
+
+  .foot3 {
+    float: left;
+    width: 95%;
+    margin: 0 2.5%;
+    position: relative;
+
+  }
+
+  footer {
+    height: 250px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .endfoot {
+    display: block;
+    position: absolute;
+    top: 225px;
+  }
+
+  .endfoot a {
+    color: dodgerblue;
+    text-decoration: none;
+  }
+
+  @media screen and (max-height: 700px) {
+    .side-nav {
+      height: 400px;
+    }
+  }
+
+  @media screen and (min-height: 700px) {
+    .side-nav {
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+
+  .math {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .math {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .math {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .right-head {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .right-head {
+    display: none;
+  }
+
+}
+
+h1 {
+  background-color: beige;
+  margin: none;
+}
+
+header {
+  height: 10vh;
+  border-bottom: 4px solid cadetblue;
+}
+
+#pagechanger {
+  border: none;
+  color: cadetblue;
+  font-size: 20px;
+  outline: none;
+  position: relative;
+  top: 2.5vh;
+}
+
+#pagechanger:hover {
+  cursor: pointer;
+}
+
+#input_button {
+  background-color: dodgerblue;
+  position: relative;
+  top: 2.5vh;
+  font-size: 18px;
+  border-radius: 10px;
+  color: whitesmoke;
+  height: 30px;
+  width: 100px;
+  left: 5px;
+  border: none;
+}
+
+#input_button:hover {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+#enter-val {
+  width: 30%;
+  float: left;
+  height: 79.1vh;
+}
+
+#input-statements {
+  width: 100%;
+  height: 82%;
+  background-color: aliceblue;
+  padding: 10px 0;
+  border-bottom: 1px solid cadetblue;
+}
+
+
+.numerator {
+  width: 100%;
+  height: auto;
+  color: cadetblue;
+  text-align: center;
+
+}
+
+#input-statements p {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+#datalist option {
+  color: cadetblue;
+}
+
+.denominator {
+  width: 100%;
+  height: auto;
+  color: cadetblue;
+  text-align: center;
+}
+
+.range-input {
+  height: 12px;
+  position: relative;
+  top: 10px;
+  width: 70%;
+}
+
+.range-input:hover {
+  cursor: pointer;
+}
+
+.displayed-eqn {
+  height: 25%;
+  width: 100%;
+  background-color: aliceblue;
+  color: cadetblue;
+  padding: 4px 0;
+}
+
+.display-eqn {
+  padding: 0 20px;
+  top: 10px;
+  position: relative;
+  height: 80%;
+}
+
+#generated_eqn {
+  color: darkcyan;
+}
+
+
+#input_value {
+  background-color: dodgerblue;
+  position: relative;
+  top: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: whitesmoke;
+  height: 30px;
+  width: 60%;
+  left: 20%;
+  border: none;
+}
+
+#input_value:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.01);
+  border: 1px solid dodgerblue;
+  background-color: whitesmoke;
+  color: cyan;
+  transition-duration: 0.5s;
+}
+
+#input_value:focus {
+  border-style: double;
+  background-color: whitesmoke;
+  color: cadetblue;
+}
+
+.program {
+  width: 100%;
+  height: 95%;
+  background-color: #004170;
+  color: whitesmoke;
+  border-radius: 20px;
+}
+
+.matlab-working {
+  width: 35%;
+  display: inline-block;
+  background-color: aliceblue;
+  height: 89vh;
+
+}
+
+.genout {
+  display: none;
+}
+
+.array {
+  font-size: 15px;
+}
+
+.prog-window {
+  background-color: whitesmoke;
+  height: 80%;
+  position: relative;
+  left: 3%;
+  width: 90%;
+  color: cadetblue;
+  padding: 0 2%;
+  border-radius: 15px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+
+#enter-val h3 {
+  margin: 2px 0;
+}
+
+.mhead {
+  position: relative;
+  left: 5%;
+  top: 10px;
+  width: 90%;
+}
+
+.mrun {
+
+  border: none;
+  left: 5%;
+  position: relative;
+  top: 10px;
+  width: 80px;
+  height: 25px;
+  font-size: 15px;
+
+  box-shadow: 2px 2px black;
+  border-radius: 4px;
+
+}
+
+.mrun p {
+  margin: 0;
+  float: left;
+}
+
+.mrunenabled:hover {
+  background-color: cyan;
+  cursor: pointer;
+}
+
+.mrunenabled:active {
+  box-shadow: none;
+  transform: translateX(1px);
+  transform: translateY(1px);
+}
+
+.mrunenabled {
+  background-color: dodgerblue;
+  color: whitesmoke;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.mrundisabled {
+  background-color: gray;
+  cursor: not-allowed;
+  color: whitesmoke;
+  opacity: 0.5;
+}
+
+#chartmine {
+
+  height: 100%;
+}
+
+#chartcont {
+  width: 90%;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  border: 1px solid cadetblue;
+  top: 40%;
+  left: 2.5%;
+  background-color: white;
+  display: none;
+}
+
+#chartcont1 {
+  width: 90%;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  border: 1px solid cadetblue;
+  left: 2%;
+  background-color: white;
+  display: none;
+}
+
+.right-cont {
+  width: 35vw;
+  height: 89vh;
+  background-color: aliceblue;
+  float: right;
+}
+
+.side-nav {
+  position: absolute;
+  height: auto;
+  min-height: 350px;
+  width: 15vw;
+  min-width: 100px;
+  top: 40px;
+  float: left;
+  background-color: whitesmoke;
+  z-index: 10;
+  top: 10vh;
+  display: none;
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 10px;
+}
+
+.nav-element {
+  height: 50px;
+}
+
+.nav-element a {
+  margin-left: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #3e6389;
+  font-size: 20px;
+  font-family: "Open sans", sans-serif;
+}
+
+.cp {
+  color: #ff6600;
+}
+
+#matwork {
+  opacity: 0.5;
+}
+
+.mat:hover {
+  cursor: not-allowed;
+}
+
+/*@media screen and (max-width: 500px){
+          #enter-val{
+        width: 100%;
+        height: 60vh;
+        }
+        .matlab-working
+        {
+          height: 60vh;
+        width: 100%;}
+        .program{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius:20px ;
+        }
+        }
+        @media screen and (max-height: 800px)
+        {
+        #enter-val{
+        height: 75vh;
+        }
+        .matlab-working{
+        height: 79vh;}
+        }*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 2.5px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4.5px, 4px);
+  transform: rotate(-45deg) translate(-5.5px, 4px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.menu-btn {
+  position: relative;
+  height: 100%;
+  width: 70px;
+  float: left;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+}
+
+header {
+  background-color: white;
+}
+
+.mob-chart {
+  display: none;
+}
+
+.rightc-head {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  color: cadetblue;
+}
+
+@media screen and (max-width: 950px) {
+  #enter-val {
+    width: 100%;
+  }
+
+  .matlab-working {
+    width: 100%;
+  }
+
+  .mob-chart {
+
+    display: block;
+  }
+
+  .right-cont {
+    display: none;
+  }
+
+  .side-nav {
+    width: 200px;
+  }
+
+  #pagechanger {
+    font-size: 12px;
+    position: relative;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  #enter-val {
+    height: 62vh;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  #pagechanger {
+    top: 0.5vh;
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  #enter-val {
+    height: 52vh;
+  }
+
+  .prog-window {
+    height: 88%;
+  }
+}
+
+@media screen and (min-height: 1300px) {
+  #enter-val {
+    height: 45vh;
+  }
+
+  .prog-window {
+    height: 91%;
+  }
+
+  #pagechanger {
+    top: 0.5vh;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-height: 680px) {
+  #enter-val {
+    height: 79vh;
+  }
+
+  .prog-window {
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #pagechanger {
+    top: 0.5vh;
+    font-size: 7px;
+  }
+
+  @media screen and (max-height: 700px) {
+    #enter-val {
+      height: 85vh;
+    }
+
+    .prog-window {
+      height: 77%;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  @media screen and (min-height: 700px) {
+    #enter-val {
+      height: 80vh;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @media screen and (max-height: 750px) {
+    #enter-val {
+      height: 80vh;
+    }
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  @media screen and (max-height: 600px) {
+    #enter-val {
+      height: 98vh;
+    }
+  }
+}
+
+.has-text-centered {
+  text-align: center !important;
+  display: block;
+
+}
+
+.instructions {
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 15px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 16%;
+  margin-right: 80%;
+  padding: 10px;
+  border-style: groove;
+  border-color: #73AD21;
+  border-radius: 25px;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: black;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.button::before{
+  transition: duration 0.4s;
+}
+
+.button:hover {
+  background-color: #444;
+  color: white;
+}
+
+.button::after {
+  background-color: #444;
+  color: white;
+}
+
+.col-9 {
+  border-style: solid;
+  border-color: #73AD21;
+  border-radius: 25px;
+  width: 1350px;
+  height: 700px;
+  margin-left: 1%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  
+  font-size: 30px;
+  text-align: center;
+}
+
+#show {
+  text-align: center;
+    
+  display: none;
+}
+#show1 {
+  text-align: center;
+    
+  display: none;
+}
+#show2 {
+  text-align: center;
+    
+  display: none;
+}
+#show3 {
+  text-align: center;
+    
+  display: none;
+}
+
