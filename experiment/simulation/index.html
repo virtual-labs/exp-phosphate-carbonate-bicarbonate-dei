@@ -11,7 +11,7 @@
 	<style type="text/css">
 		@font-face{
 		 font-family:'digital-7';
-		 src: url('../src/styles/fonts/digital-7.ttf');
+		 src: url('css/digital-7.ttf');
 		}
 
 		#nextstep{
@@ -24,13 +24,13 @@
 
 <div class="row zero">
     <div id="main"> 
-      <div style="height: 55px;font-size: 17px"><p id="masteps">First Step is calibration of the pH meter. Click on pH 4.01 flask.</p> <a id="nextstep" class="btn btn-success" href="procedure2.html"> Next Step</a>
+      <div style="height: 55px;font-size: 17px"><p id="masteps">First Step is calibration of the pH meter. Click on pH 4.01 flask.</p> <a id="nextstep" class="btn btn-success" href="step2.html"> Next Step</a>
       </div>
       <hr>
-	  <span class="counter" id="CpHval" style="position: absolute;margin-top: 100px;width: 100px;margin-left: 35px;background-color: transparent;border: none;box-shadow: none;font-size: 28px;font-family: 'digital-7', sans-serif;">00.00</span>
-	  <input type="button" onclick="fnCaleb();" style="width: 150px;position: absolute;margin-top: 191px;width: 120px;margin-left: 25px;background-color: transparent;border: none;">
-	  <input type="button" onclick="fnexp();" style="position: absolute;margin-top: 30px;margin-left: 390px;width: 35px;height: 125px;background-color: transparent;border: none;">
-	  <input type="button" onclick="fnempt();" style="position: absolute;margin-top: 190px;margin-left: 390px;width: 70px;height: 90px;background-color:transparent; ;border: none;">
+	  <span class="counter" id="CpHval" style="position: absolute;margin-top: 100px;width: 100px;margin-left: 35px;background-color: transparent;border: none;box-shadow: none;font-size: 28px;font-family: 'digital-7', sans-serif;z-index: 5">00.00</span>
+	  <input type="button" onclick="fnCaleb();" style="width: 150px;position: absolute;margin-top: 191px;width: 120px;height:26px;margin-left: 25px;background-color: transparent;border: none;z-index: 5">
+	  <input type="button" onclick="fnexp();" style="position: absolute;margin-top: 30px;margin-left: 390px;width: 35px;height: 125px;background-color: transparent;border: none;z-index: 5">
+	  <input type="button" onclick="fnempt();" style="position: absolute;margin-top: 190px;margin-left: 390px;width: 70px;height: 90px;background-color:transparent; ;border: none;z-index: 5">
 	  <img src="imgs/exp0.png" id="exp0" class="exp6exp">
 	  <img src="imgs/exp1.png" id="exp1" class="exp6exp">
 	  <img src="imgs/exp2.png" id="exp2" class="exp6exp">
@@ -43,15 +43,20 @@
 	  <img src="imgs/pr1.png" id="pr1" class="exp6pr">
 	  <img src="imgs/pr2.png" id="pr2" class="exp6pr">
 	  <img src="imgs/pr3.png" id="pr3" class="exp6pr">
-	  <button id="exp6cml3" onclick="calab3();" style="float: right;background-color: transparent;border: none;margin-right: 20px">
-		<img src="imgs/bf3.png" style="width: 65px;">
-	  </button>
-	  <button id="exp6cml2" onclick="calab2();" style="float: right;background-color: transparent;border: none;margin-right: 20px">
-	  	<img src="imgs/bf2.png" style="width: 65px;">
-	  </button>
-	  <button id="exp6cml1"  onclick="calab1();" style="float: right;background-color: transparent;border: none;margin-right: 20px">
+
+	  <button id="exp6cml1"  onclick="calab1();" style="position: absolute;background-color: transparent;border: none;margin-left: 600px;margin-top: 200px;">
 	  	<img src="imgs/bf1.png" style="width: 65px;">
 	  </button>
+
+	  <button id="exp6cml2" onclick="calab2();" style="position: absolute;background-color: transparent;border: none;margin-left: 700px;margin-top: 200px;">
+	  	<img src="imgs/bf2.png" style="width: 65px;">
+	  </button>
+
+	  <button id="exp6cml3" onclick="calab3();" style="position: absolute;background-color: transparent;border: none;margin-left: 800px;margin-top: 200px;">
+		<img src="imgs/bf3.png" style="width: 65px;">
+	  </button>
+
+	  
     </div>
 </div>
 

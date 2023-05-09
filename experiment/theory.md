@@ -1,88 +1,100 @@
-What is pH?
-pH is defined as the negative logarithm of H+ ion concentration. Hence the meaning of the name pH is justified as the power of hydrogen. A pH scale is a tool for measuring acids and bases. The scale ranges from 0-14.
-pH may be seen as an abbreviation of the power of hydrogen or, more fully, the concentration of hydrogen ion in a liquid. Mathematical definition of pH is a little less intuitive but more useful in general. It states that the pH equals the negative logarithmic value of the concentration of hydrogen ion (H+).
+<p>The preparation of the buffers is based on the understanding of the Henderson-Hasselbalch equation, to be able to use this equation to determine the amount of an acid and conjugate base needed to make a buffer solution at a certain specific pH.  To investigate the relationship between the buffer capacity and concentration.</p>
 
-pH = -log [H+]
-Introduction to Buffer Solution:
-A Buffer is a solution that can resist pH change upon the addition of an acidic or basic components. This is able to neutralize small amounts of added acid or base, for maintaining the pH of the solution relatively stable.
-This is important for reaction or processes which require specific and stable pH ranges. Basically buffer solution have its own working pH range and capacity which indicates that how much acid or base can be neutralized before pH changes and the amount of pH change by adding acid or base.
-Acidic Buffer:
-It is formed by the mixture of weak acid and its salt with a strong base. Examples:
-(i) CH3COOH (acetic acid) + CH3COONa (sodium acetate)
-(ii) H3BO3 (boric acid) + Na2[B4O5(OH)4].8H2O (borax)
-Basic Buffer:
-It is formed by the mixture of a weak base and its salt with strong acid. Examples:
-(i) NH4OH(Ammonium hydroxide) + NH4Cl(Ammonium Chloride)
-(ii) C₂H₅NO₂ (Glycine) + C2H6ClNO2 (Glycine hydrochloride)
-Henderson-Hasselbach Equation
-Let us next understand the mechanism according to which buffer function:
-a). A weak acid ionizes as:
-HA ↔ H+ + A-
-where, HA is acid, H is the postively charged ion and A is negatively charged ion.
-b). Complete ionization of salt yields:
-NaA ↔ Na+ + A-
-where , NaA is sodium salt
-At equilibrium,
-Ka = 
-(H)+(A)-(HA)
-where, Ka is constant
-(H)+ = Ka 
-(HA)(A)-
- = Ka 
-(salt)(acid)
-By taking negative algorithm on both sides we get:
--log(H)+ = -log Ka + log 
-(salt)(acid)
-or pH = pKa + log 
-(salt)(acid)
- (Handerson-Hasselbach Equation)
-Mechanism of Acidic Buffer:
-An acidic buffer is prepared by mixing equimolar amounts of weak acid and a slat of weak acid and strong base. eg. consider an acidic buffer obtained by mixing acetic acid and sodium acetate.
+<h4>What is pH?</h4>
+<p>pH is defined as the negative logarithm of H<sup>+</sup> ion concentration. Hence the meaning of the name pH is justified as the power of hydrogen. A pH scale is a tool for measuring acids and bases. The scale ranges from 0-14.</p>
+<p>pH may be seen as an abbreviation of the power of hydrogen-or, more fully, the concentration of hydrogen ion in a liquid. pH is the negative logarithmic value of the concentration of hydrogen ion (H<sup>+</sup>)</p>
 
-CH3COOH → CH3COO- + H+
-CH3COONaH → CH3COO- + Na+
+<p class="eq">pH = -log [H<sup>+</sup>]</p>
 
-Acetic acid, being a weak acid, ionizes to a less extent while sodium acetate , being a strong electrolyte, ionizes completely. When a small amount of HCl is added to it, the added H+ ions combines with acetate ions to form acetic acid molecules. Thus the pH of the buffer remains unchanged.
+<h4>Buffer Solution:</h4>
+<p>A Buffer is a solution that can resist pH change upon the addition of acidic or basic components. Buffers neutralize small amounts of added acid or base, for maintaining the stable pH of the solution. 
+This is important for biochemical reactions or physiological processes which require specific and stable pH ranges. Buffer Solution have its own working pH range and capacity which indicates the resist in the pH change and the amount of pH change by the addition of acid or base.</p>
 
-HCl → H+ + Cl-
-CH3COO- + H+ → CH3COOH
+<h4>Acidic Buffer:</h4>
+<p>It is formed by the mixture of weak acid and its salt with a strong base. <br>
+Examples:</p>
+<ol>
+  <li>CH<sub>3</sub>COOH (acetic acid) + CH<sub>3</sub>COONa (sodium acetate)</li>
+  <li>H<sub>3</sub>BO<sub>3</sub> (boric acid) + Na<sub>2</sub>[B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub>].8H<sub>2</sub>O (borax)</li>
+</ol>
 
-Thus phenomenon is called reverse basicity due to acetate ions. On addition of small amount of strong base like NaOH, the following reactions occur
 
-NaOH → Na+ + OH-
-H+ + OH- → H2O
-CH3COOH→ CH3COO- + H+
-CH3COOH + OH- → CH3COO- + H2O
-The combination of H+ of CH3COOH with OH- disturbs the equilibrium position of acetic acid. Therefore to maintain its Ka constant it dissociates to a greater extent. Thus the OH- ions combine with acetic acid thereby maintaining the pH of the buffer. This phenomenon is called reverse acidity due to acetic acid.
-Mechanism of Basic Buffer
-Basic buffer is prepared by mixing equimolar amount of weak base and a salt of a weak base and strong acid. eg. consider the basic buffer obtained by mixing ammonium hydroxide and ammonium chloride
+<h4>Basic Buffer:</h4>
+<p>It is formed by the mixture of a weak base and its salt with strong acid. <br>
+Examples:</p>
+<ol>
+  <li>NH<sub>4</sub>OH(Ammonium hydroxide) + NH<sub>4</sub>Cl(Ammonium Chloride)</li>
+  <li>C₂H₅NO₂ (Glycine) + C<sub>2</sub>H<sub>6</sub>ClNO<sub>2</sub> (Glycine hydrochloride)</li>
+</ol>
+    
+<h4>Henderson-Hasselbalch Equation</h4>
+<p>Let us next understand the mechanism according to which buffer function:</p>
 
-NH4OH → NH4+ + OH-
-NH4Cl → NH4+ + Cl-
+  <h5> a) A weak acid ionizes as:</h5>
+    <p>HA ↔ H<sup>+</sup> + A<sup>-</sup><br>
+    where, HA is acid, H is the positively charged ion and A is negatively charged ion.
+  </p>
+  <h5>b). Complete ionization of salt yields:</h5>
+<p>NaA ↔ Na<sup>+ </sup>+ A<sup>-</sup><br>
+where, NaA is sodium salt</p>
+<p>At equilibrium,<br>
+Ka =  (H)<sup>+</sup>(A)<sup>-</sup>(HA)<br>
+where, Ka is constant</p>
+<p>(H)<sup>+</sup>
+= Ka (HA)(A)<sup>-</sup>
+ = Ka (salt)(acid)</p>
+<p>By taking negative algorithm on both sides, we get:<br>
+-log(H)<sup>+</sup>= -log Ka + log (salt)(acid)<br>
+or<br>
+ pH = pKa + log (salt)(acid)<br>
+ (Henderson-Hasselbalch Equation)</p>
+<h4>Mechanism of Acidic Buffer:</h4>
+<p>An acidic buffer is prepared by mixing equimolar amounts of weak acid and a slat of weak acid and strong base. E.g. consider an acidic buffer obtained by mixing acetic acid and sodium acetate.</p>
 
-NH4OH, being a weak base, ionizes to a less extent while NH4Cl being a strong electrolyte ionizes almost completely. When a small amount of strong acid like HCl is added, the H+ ions combines with OH- to form un-dissociated water molecules. However, to maintain Ka constant, NH4OH dissociates more thus removing H+ ions.
+<p>CH<sub>3</sub>COOH → CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup><br>
+CH<sub>3</sub>COONaH → CH<sub>3</sub>COO<sup>-</sup> + Na<sup>+</sup></p>
 
-HCl → H+ + Cl-
-H+ + OH- → H2O
-NH4OH → NH4 + + OH-
-NH4OH + H+→ NH4+ + H2O
-On addition of a small amount of a strong base, the following reaction occurs.
+<p>Acetic acid, being a weak acid, ionizes to a less extent while sodium acetate, being a strong electrolyte, ionizes completely. When a small amount of HCl is added to it, the added H<sup>+</sup> ions combine with acetate ions to form acetic acid molecules. Thus, the pH of the buffer remains unchanged.</p>
 
-NaOH → Na+ + OH-
-NH4+ + OH- → NH4OH
+<p>HCl → H<sup>+</sup> + Cl<sup>-</sup><br>
+CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup>→ CH<sub>3</sub>COOH</p>
 
-Thus the OH- ions are removed by NH4+ ions thereby maintaining the pH constant. This is called reserved acidity due to NH4+ ions.
-Buffer Capacity:
-Buffer capacity can be defined as, ‘the capacity of a solution to resist changes in pH on the addition of strong acid or strong base which may be expressed numerically as the number of moles of strong acid or strong base required to change the pH by one unit when added to one litre of the specified buffer solution’.
-Thus,
+<p>Thus phenomenon is called reverse basicity due to acetate ions. On addition to small amount of strong base like NaOH, the following reactions occur</p>
 
-Buffer Capacity (a) = The number of moles of H+ that must be added to 1 litre of the buffer in order to decrease the pH by 1 unit = the buffer capacity in the acid direction,
+<p>NaOH → Na<sup>+</sup> + OH<sup>-</sup><br>
+H<sup>+ </sup>+ OH<sup>-</sup> → H<sup>2</sup>O<br>
+CH<sub>3</sub>COOH→ CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup><br>
+CH<sub>3</sub>COOH + OH<sup>-</sup> → CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O</p>
+<p>The combination of H<sup>+</sup> of CH<sub>3</sub>COOH with OH<sup>-</sup> disturbs the equilibrium position of acetic acid. Therefore, to maintain its Ka constant it dissociates to a greater extent. Thus, the OH- ions combine with acetic acid thereby maintaining the pH of the buffer. This phenomenon is called reverse acidity due to acetic acid.</p>
+<h4>echanism of Basic Buffer</h4>
+<p>Basic buffer is prepared by mixing equimolar amount of weak base and a salt of a weak base and strong acid. E.g. consider the basic buffer obtained by mixing ammonium hydroxide and ammonium chloride</p>
 
-and,
+<p>NH<sub>4</sub>OH → NH<sub>4</sub><sup>+</sup> + OH<sup>-</sup><br>
+NH<sub>4</sub>Cl → NH<sub>4</sub><sup>+</sup> + Cl<sup>-</sup></p>
 
-Buffer Capacity (b) = The number of moles of OH- that must be added to one litre of the buffer in order to increase the pH by 1 unit = the buffer capacity in the alkaline direction.
-Buffer capacity as a quantitative unit for measuring buffering effects is therefore expressed as:
-Buffering capacity = δ 
-(HA)δ (pH)
-where δ is delta and HA is acid.
-Buffer capacity is maximum when pH = pKa
+<p>NH<sub>4</sub>OH, being a weak base, ionizes to a less extent while NH<sub>4</sub>Cl being a strong electrolyte ionizes almost completely. When a small amount of strong acid like HCl is added, the H<sup>+</sup> ions combine with OH<sup>-</sup> to form un-dissociated water molecules. However, to maintain Ka constant, NH4OH dissociates more thus removing H<sup>+</sup> ions.</p>
+
+<p>HCl → H<sup>+</sup> + Cl<sup>-</sup><br>
+H<sup>+</sup> + OH<sup>-</sup> → H<sub>2</sub>O<br>
+NH<sub>4</sub>OH → NH<sub>4</sub> <sup>+</sup> + OH<sup>-</sup><br>
+NH<sub>4</sub>OH + H<sup>+</sup>→ NH<sub>4</sub><sup>+</sup> + H<sub>2</sub>O</p>
+<p>On addition of a small amount of a strong base, the following reaction occurs.</p>
+
+<p>NaOH → Na<sup>+</sup> + OH<sup>-</sup><br>
+NH<sub>4</sub>+ + OH<sup>-</sup> → NH<sub>4</sub>OH</p>
+
+<p>Thus the OH<sup>-</sup> ions are removed by NH4+ ions thereby maintaining the pH constant. This is called reserved acidity due to NH<sub>4</sub><sup>+</sup> ions.</p>
+<h4>Buffer Capacity:</h4>
+<p>Buffer capacity can be defined as, ‘the capacity of a solution to resist changes in pH on the addition of strong acid or strong base which may be expressed numerically as the number of moles of strong acid or strong base required to change the pH by one unit when added to one liter of the specified buffer solution’. Thus,<br>
+
+<p>Buffer Capacity (a) = The number of moles of H<sup>+</sup>
+ that must be added to 1 liter of the buffer in order to decrease the pH by 1 unit = the buffer capacity in the acid direction,<br>
+
+and,<br>
+
+Buffer Capacity (b) = The number of moles of OH<sup>-</sup>
+ that must be added to one liter of the buffer in order to increase the pH by 1 unit = the buffer capacity in the alkaline direction.</p>
+<p>Buffer capacity as a quantitative unit for measuring buffering effects is therefore expressed as:<br>
+Buffering capacity = δ (HA) δ (pH)<br>
+where δ is delta and HA is acid.<br>
+Buffer capacity is maximum when pH = pKa</p>
