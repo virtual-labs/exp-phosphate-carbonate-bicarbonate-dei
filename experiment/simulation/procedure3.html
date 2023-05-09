@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Virtual Labs Dei-Linear Control Systems</title>
-    <link rel = "icon" href = "https://www.vlab.co.in/images/logo.jpg" type = "image/x-icon">
-
-    <link rel="stylesheet" type="text/css" href="../src/styles/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../src/styles/custom.css">
-    <script src="../src/scripts/jquery.min.js"></script>
-    <script src="../src/scripts/bootstrap.min.js"></script>
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 	<style type="text/css">
@@ -30,127 +18,52 @@
 <body>
 
 <div class="row zero">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header zero">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 zero">
-            <button class="btn" id="navbtn">
-                <i class="fa fa-bars" style="font-size: 32px;"></i>
-            </button>
-            <img src="../extra/logo.png" style="height: 95px; padding-left: 25px">
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-0 col-xs-0 zero hidden-sm hidden-xs hdmnu">
+    <div id="main"> 
+      <div style="height: 55px;font-size: 17px"><p id="masteps">In the last step we measure the pH value of solutions. For this click on Na₂HPO₄ solution.</p></div>
+      <hr>
+	  <span class="counter" id="CpHval" style="position: absolute;margin-top: 100px;width: 100px;margin-left: 35px;background-color: transparent;border: none;box-shadow: none;font-size: 28px;font-family: 'digital-7', sans-serif;">00.00</span>
+	  <input type="button" id="btnCal" onclick="fnCal();" style="width: 150px;position: absolute;margin-top: 225px;width: 120px;margin-left: 22px;background-color: transparent;border: none;">
+	  <input type="button" id="btnmet" onclick="fnexp();" style="position: absolute;margin-top: 30px;margin-left: 375px;width: 35px;height: 135px;background-color: transparent;border: none;">
+	  <input type="button" id="btnmnflsk" onclick="fnempt();" style="position: absolute;margin-top: 190px;margin-left: 375px;width: 80px;height: 85px;background-color:transparent; ;border: none;">
 
-          <a href="https://www.vlab.co.in/" target="_new">HOME</a>
-          <a href="https://www.vlab.co.in/participating-institutes" target="_new">PARTNERS</a>
-          <a href="https://www.vlab.co.in/contact-us" target="_new">CONTACT</a>
-            
-        </div>
+
+	  <img src="imgs3/23.png" id="exp0" class="exp6exp">
+	  <img src="imgs3/26.png" id="exp1" class="exp6exp">
+	  <img src="imgs3/24.png" id="prx1" class="exp6exp">
+	  <img src="imgs3/25.png" id="prx2" class="exp6exp">
+	  <img src="imgs3/26.png" id="prx3" class="exp6exp">
+	  <img src="imgs3/30.png" id="prx30" class="exp6exp" style="position: absolute;width: 100px;margin-top: 45px;left: 710px;">
+	  <img src="imgs3/31.png" id="prx31" class="exp6exp" style="position: absolute;width: 100px;margin-top: 45px;left: 710px;">
+	 
+	  
+
+	  <img src="imgs3/27.png" id="prx27" style="float: left; position: absolute;margin-left: 100px;margin-top:195px;width: 70px;">
+	  <img src="imgs3/28.png" id="prx28" style="float: left;position: absolute;margin-left: 175px;margin-top:195px;width: 70px;">
+	  <img src="imgs3/27-5.png" id="prx275" style="float: left; position: absolute;margin-left: 100px;margin-top:138px;width: 70px;">
+	  <img src="imgs3/28-5.png" id="prx285" style="float: left;position: absolute;margin-left: 175px;margin-top:138px;width: 70px;">
+	 
+	  <img src="imgs3/21.png" id="pr1" style="width: 225px;visibility: hidden;position: absolute;left: 700px;margin-top: 69px;">
+	  <img src="imgs3/22.png" id="pr2" style="width: 225px;visibility: hidden;position: absolute;left: 700px;margin-top: 69px;">
+	  <button id="exp6cml2" onclick="calab2();" style="float: right;background-color: transparent;border: none;margin-right: 20px;margin-top: 70px;">
+	  	<img src="imgs3/20.png" style="height: 225px;">
+	  </button>
+	  <button id="exp6cml1"  onclick="calab1();" style="float: right;background-color: transparent;border: none;margin-right: 20px;margin-top: 70px;">
+	  	<img src="imgs3/19.png" style="height: 225px;">
+	  </button>
+
+	  <button id="btnorng" onclick="orng();" style="float: left;position: absolute;margin-top: 140px;margin-left: 175px;width: 70px;height: 150px;background-color:transparent;border: none;">
+	  </button>
+	  <button id="btnblu" onclick="blu();" style="position: absolute;margin-top: 140px;margin-left: 100px;width: 70px;height: 150px;background-color:transparent;border: none;">
+	  </button>
+		  
+
+		  
     </div>
-
-    <div class="col-lg-12 col-md-12 col-sm-0 col-xs-0 zero mnbody">
-        <div id="mySidebar" class="sidebar">
-          <a href="../index.html" style="margin-top:-27px"> Biochemistry Lab.</a>
-          <hr>
-          <a href="index.html">Aim</a>
-          <a href="theory.html" >Theory</a>
-          <a href="objective.html" >Objective</a>
-          <a href="pretest.html" >Pretest</a>
-          <a href="procedure.html" >Procedure</a>
-          <a href="simulation.html"  class="mnuact" >Simulation</a>
-          <a href="posttest.html" >Posttest</a>
-          <a href="references.html" >References</a>
-        </div>
-        <div id="main"> 
-          <div style="height: 55px;font-size: 17px"><p id="masteps">In the last step we measure the pH value of solutions. For this click on Na₂HPO₄ solution.</p></div>
-          <hr>
-		  <span class="counter" id="CpHval" style="position: absolute;margin-top: 100px;width: 100px;margin-left: 35px;background-color: transparent;border: none;box-shadow: none;font-size: 28px;font-family: 'digital-7', sans-serif;">00.00</span>
-		  <input type="button" id="btnCal" onclick="fnCal();" style="width: 150px;position: absolute;margin-top: 225px;width: 120px;margin-left: 22px;background-color: transparent;border: none;">
-		  <input type="button" id="btnmet" onclick="fnexp();" style="position: absolute;margin-top: 30px;margin-left: 375px;width: 35px;height: 135px;background-color: transparent;border: none;">
-		  <input type="button" id="btnmnflsk" onclick="fnempt();" style="position: absolute;margin-top: 190px;margin-left: 375px;width: 80px;height: 85px;background-color:transparent; ;border: none;">
-
-		  
-		  
-
-		  <img src="imgs3/23.png" id="exp0" class="exp6exp">
-		  <img src="imgs3/26.png" id="exp1" class="exp6exp">
-		  <img src="imgs3/24.png" id="prx1" class="exp6exp">
-		  <img src="imgs3/25.png" id="prx2" class="exp6exp">
-		  <img src="imgs3/26.png" id="prx3" class="exp6exp">
-		  <img src="imgs3/30.png" id="prx30" class="exp6exp" style="position: absolute;width: 100px;margin-top: 45px;left: 710px;">
-		  <img src="imgs3/31.png" id="prx31" class="exp6exp" style="position: absolute;width: 100px;margin-top: 45px;left: 710px;">
-		 
-		  
-
-		  <img src="imgs3/27.png" id="prx27" style="float: left; position: absolute;margin-left: 100px;margin-top:195px;width: 70px;">
-		  <img src="imgs3/28.png" id="prx28" style="float: left;position: absolute;margin-left: 175px;margin-top:195px;width: 70px;">
-		  <img src="imgs3/27-5.png" id="prx275" style="float: left; position: absolute;margin-left: 100px;margin-top:138px;width: 70px;">
-		  <img src="imgs3/28-5.png" id="prx285" style="float: left;position: absolute;margin-left: 175px;margin-top:138px;width: 70px;">
-		 
-		  <img src="imgs3/21.png" id="pr1" style="width: 225px;visibility: hidden;position: absolute;left: 700px;margin-top: 69px;">
-		  <img src="imgs3/22.png" id="pr2" style="width: 225px;visibility: hidden;position: absolute;left: 700px;margin-top: 69px;">
-		  <button id="exp6cml2" onclick="calab2();" style="float: right;background-color: transparent;border: none;margin-right: 20px;margin-top: 70px;">
-		  	<img src="imgs3/20.png" style="height: 225px;">
-		  </button>
-		  <button id="exp6cml1"  onclick="calab1();" style="float: right;background-color: transparent;border: none;margin-right: 20px;margin-top: 70px;">
-		  	<img src="imgs3/19.png" style="height: 225px;">
-		  </button>
-
-		  <button id="btnorng" onclick="orng();" style="float: left;position: absolute;margin-top: 140px;margin-left: 175px;width: 70px;height: 150px;background-color:transparent;border: none;">
-		  </button>
-		  <button id="btnblu" onclick="blu();" style="position: absolute;margin-top: 140px;margin-left: 100px;width: 70px;height: 150px;background-color:transparent;border: none;">
-		  </button>
-		  
-
-		  
-        </div>
-
-
-    </div>
-
-
 </div>
-<div class="row zero">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 zero footer">
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 comlnk">
-        <h4>Community Links</h4>
-        <a href="https://sakshat.ac.in/">Sakshat Portal</a>
-        <a href="http://outreach.vlabs.ac.in/">Outreach Portal</a>
-        <a href="https://www.vlab.co.in/faq">FAQ: Virtual Labs</a>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 cnts">
-        <h4>Contact Us</h4>
-        <p>Phone: General Information:
-            <br>
-            011-26582050
-            <br>
-            Email: support@vlabs.ac.in
-        </p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 flos">
-        <h4>Suggested</h4>
-        <a href="https://twitter.com/TheVirtualLabs">Dayalbagh Educational Institute</a>
-        <a href="https://twitter.com/TheVirtualLabs">0562-2801545, 0562-2801226</a>
-        <a href="https://twitter.com/TheVirtualLabs">Email: admin@dei.ac.in</a>
-    </div>
 
-</div>
-</div>
 <script>
 
 var step=0;
-
-$(document).ready(function(){
-  $("#navbtn").click(function(){
-    $("#soln").toggleClass("hidmain");
-    $("#mySidebar").toggleClass("hidslid");
-    
-  });
-
-
-
-
-
-});
-
 
 function calab1()
 {
