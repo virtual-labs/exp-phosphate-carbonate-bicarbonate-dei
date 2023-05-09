@@ -36,27 +36,52 @@
         <div id="mySidebar" class="sidebar">
           <a href="../index.html" style="margin-top:-27px"> Biochemistry Lab.</a>
           <hr>
-          <a href="index.html" class="mnuact" >Aim</a>
+          <a href="index.html">Aim</a>
           <a href="theory.html" >Theory</a>
           <a href="objective.html" >Objective</a>
           <a href="pretest.html" >Pretest</a>
           <a href="procedure.html" >Procedure</a>
-          <a href="simulation.html" >Simulation</a>
+          <a href="simulation.html"  class="mnuact" >Simulation</a>
           <a href="posttest.html" >Posttest</a>
           <a href="references.html" >References</a>
         </div>
         <div id="main"> 
-          <h2>Aim</h2>
+          <h2>Calculation of the pH value of an acidic solution. </h2>
           <hr>
-          <p>The main aim of this lab is to help the students to understand the concept of pH and buffers and to optimally use pH meter to make the buffer solutions with accuracy which is the foundation for successful advanced experiments. To provide the method for the preparation of buffers with precision to deal with molecules and macromolecules that mostly are weak electrolytes of biochemical importance.  The lab also will enable the application of the method for the determination of the pH of the soil, various juices, and other products where pH is an important criterion for their purity and optimal function. </p>
+
+		  <div class="form-group">
+			  <label class="prlabl">Enter the molar concentrations concentration of the acid in the solution.</label>
+			  <input type="text" class="form-control" id="soln">
+		  </div>
+		  <div class="form-group">
+			  <label class="prlabl">Enter the molar concentrations of the conjugate base of the acid in the solution.</label>
+			  <input type="text" class="form-control" id="base">
+		  </div>
+		  <div class="form-group">
+			  <label class="prlabl">Enter the acid dissociation constant (Ka).</label>
+			  <input type="text" class="form-control" id="cnst">
+		  </div>
+		  
+		  <div class="form-group">
+			  <button class="btn btn-success" id="eval">Calculate</button>
+		  </div>
+
+		  <div class="ansexp">
+		  	  <h3>Solution</h3>
+		  	  <h5 id="ans"></h5>
+		  	  <p>The pH value is calculated using Henderson Hasselbalch equation:</p>
+			  <img src = "imgs/eq1.svg" alt="My Happy SVG"/>
+			  
+		  </div>
+
+           
+		  
+
+
         </div>
 
 
     </div>
-
-
-    
-
 
 
 </div>
@@ -89,10 +114,26 @@
 <script>
 $(document).ready(function(){
   $("#navbtn").click(function(){
-    $("#main").toggleClass("hidmain");
+    $("#soln").toggleClass("hidmain");
     $("#mySidebar").toggleClass("hidslid");
     
   });
+
+
+  $("#eval").click(function(){
+    soln=$("#soln").val();
+    base=$("#base").val();
+    cnst=$("#cnst").val();
+    ka=-Math.log10(cnst)
+    ph=ka + Math.log10(base/soln) 
+    $(".ansexp").css('display','block'); 
+    $("#ans").text('The pH value of given solution is = '+ph);
+
+    
+  });
+
+
+
 });
 </script>
 

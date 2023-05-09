@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Labs Dei-Linear Control Systems</title>
+    <link rel = "icon" href = "https://www.vlab.co.in/images/logo.jpg" type = "image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="../src/styles/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/styles/custom.css">
+    <script src="../src/scripts/jquery.min.js"></script>
+    <script src="../src/scripts/bootstrap.min.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+		@font-face{
+		 font-family:'digital-7';
+		 src: url('../src/styles/fonts/digital-7.ttf');
+		}
+		.hdd
+		{
+			visibility: hidden;
+		}
+
+
+		.imflsk16
+		{
+			animation: animName 1s linear infinite;
+		}
+
+		@keyframes animName {
+		 0%{
+		    transform: rotate(-25deg);
+		   }
+		50%{
+		    transform: rotate(25deg);
+		   }
+		  100%{
+		    transform: rotate(-25deg);
+		   }
+		}
+
+
+
+	</style>
+    
+</head>
+<body>
+
+<div class="row zero">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header zero">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 zero">
+            <button class="btn" id="navbtn">
+                <i class="fa fa-bars" style="font-size: 32px;"></i>
+            </button>
+            <img src="../extra/logo.png" style="height: 95px; padding-left: 25px">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-0 col-xs-0 zero hidden-sm hidden-xs hdmnu">
+
+          <a href="https://www.vlab.co.in/" target="_new">HOME</a>
+          <a href="https://www.vlab.co.in/participating-institutes" target="_new">PARTNERS</a>
+          <a href="https://www.vlab.co.in/contact-us" target="_new">CONTACT</a>
+            
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-0 col-xs-0 zero mnbody">
+        <div id="mySidebar" class="sidebar">
+          <a href="../index.html" style="margin-top:-27px"> Biochemistry Lab.</a>
+          <hr>
+          <a href="index.html">Aim</a>
+          <a href="theory.html" >Theory</a>
+          <a href="objective.html" >Objective</a>
+          <a href="pretest.html" >Pretest</a>
+          <a href="procedure.html" >Procedure</a>
+          <a href="simulation.html"  class="mnuact" >Simulation</a>
+          <a href="posttest.html" >Posttest</a>
+          <a href="references.html" >References</a>
+        </div>
+        <div id="main"> 
+          <div style="height: 55px;font-size: 17px">First Step is to calibrate the pH meter.</div>
+          <hr>
+		  <img id="wtbknk" src="imgs2/2.png" style="width: 200px;position: absolute;top: 350px">
+		  <img id="wtfll" class="hdd" src="imgs2/3.png" style="width: 200px;position: absolute;top: 340px;">
+		  <img id="imcml1" src="imgs2/5.png" style="width: 75px;position: absolute;top: 350px;margin-left: 250px">
+		  <img id="imcml2" src="imgs2/6.png" style="width: 75px;position: absolute;top: 350px;margin-left: 350px">
+		  <img id="imflsk" src="imgs2/1.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
+		  <img id="imflsk15" class="hdd" src="imgs2/15.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
+		  <img id="imflsk16" class="hdd" src="imgs2/16.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
+		  <img id="imwtr" src="imgs2/7.png" style="width: 90px;position: absolute;top: 270px;margin-left: 650px">	
+		  <button id="btn-ch1" onclick="step1();" style="border: none;background: transparent;width: 75px;position: absolute;top: 350px;margin-left: 250px;height: 110px;"></button>
+		  <button id="btn-ch2" style="border: none;background: transparent;width: 75px;position: absolute;top: 350px;margin-left: 350px;height: 110px;"></button>
+		  <button id="btn-fls" onclick="step4();" style="border: none;background: transparent;width: 125px;position: absolute;top: 180px;margin-left: 500px;height: 280px;"></button>
+		  <button id="btn-wt" onclick="step3();" style="border: none;background: transparent;width: 70px;position: absolute;top: 302px;margin-left: 672px;height: 165px;"></button>
+		  <button id="btn-cmflk" onclick="step2();" style="border: none;background: transparent;width: 105px;position: absolute;top: 332px;margin-left:50px;height: 37px;"></button>  
+		  
+		  <img id="imcmlpr" class="hdd" src="imgs2/10.png" style="height:95px;width: 150px  ;position: absolute;top: 250px;margin-left: 120px;">
+		  <img id="imcmfls" class="hdd" src="imgs2/14.png" style="width: 150px  ;position: absolute;top: 75px;margin-left: 561px;">
+		  <img id="imwtfls" class="hdd" src="imgs2/13.png" style="width: 220px  ;position: absolute;top: 102px;margin-left: 560px;">
+
+		  
+        </div>
+
+
+    </div>
+
+
+</div>
+<div class="row zero">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 zero footer">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 comlnk">
+        <h4>Community Links</h4>
+        <a href="https://sakshat.ac.in/">Sakshat Portal</a>
+        <a href="http://outreach.vlabs.ac.in/">Outreach Portal</a>
+        <a href="https://www.vlab.co.in/faq">FAQ: Virtual Labs</a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 cnts">
+        <h4>Contact Us</h4>
+        <p>Phone: General Information:
+            <br>
+            011-26582050
+            <br>
+            Email: support@vlabs.ac.in
+        </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 flos">
+        <h4>Suggested</h4>
+        <a href="https://twitter.com/TheVirtualLabs">Dayalbagh Educational Institute</a>
+        <a href="https://twitter.com/TheVirtualLabs">0562-2801545, 0562-2801226</a>
+        <a href="https://twitter.com/TheVirtualLabs">Email: admin@dei.ac.in</a>
+    </div>
+
+</div>
+</div>
+<script>
+
+var step=0;
+
+$(document).ready(function(){
+  $("#navbtn").click(function(){
+    $("#soln").toggleClass("hidmain");
+    $("#mySidebar").toggleClass("hidslid");
+    
+  });
+
+
+
+
+
+});
+
+
+function step1()
+{
+	$("#wtbknk").css("visibility","hidden");
+	$("#imcml1").css("visibility","hidden");
+	$("#imcmlpr").css("visibility","visible");
+	$("#imcmlpr").delay(800).fadeOut();
+	$("#wtfll").css("visibility","visible");
+	$("#pr1").delay(1200).fadeOut();
+	step=1;
+}
+function step2()
+{	if (step==1)
+	{
+		$("#btn-cmflk").css("visibility","hidden");
+		$("#imcmfls").css("visibility","hidden");
+		$("#wtfll").css("visibility","hidden");
+		$("#wtbknk").css("visibility","visible");
+		$("#imcmfls").css("visibility","visible");
+		$("#imcmfls").delay(800).fadeOut();
+		$("#wtbknk").css("visibility","visible");
+		$("#imflsk15").css("visibility","visible");
+		$("#imflsk15").delay(500).fadeIn();
+		step=2;
+	}
+}
+
+function step3()
+{	if (step==2)
+	{
+		$("#imwtr").css("visibility","hidden");
+		$("#imwtfls").css("visibility","visible");
+		$("#imflsk16").css("visibility","visible");
+		$("#imflsk15").delay(800).fadeOut();
+		$("#imwtfls").delay(1000).fadeOut();
+		$("#imflsk16").delay(800).fadeIn();
+		step=3;
+	}
+}
+
+function step4()
+{	if (step==3)
+	{
+		$("#imflsk").css("visibility","hidden");
+		$('#imflsk16').addClass('imflsk16');
+		setTimeout(function(){
+		    $('#imflsk16').removeClass('imflsk16');
+		},5000);
+		// $("#imflsk16").addClass("imflsk16");
+		// $("#imflsk16").delay(1200).removeClass("imflsk16");
+		step=4;
+	}
+}
+
+// function calab2()
+// {
+// 	if (step==4)
+// 	{
+// 		$("#exp6cml2").delay(10).fadeOut();
+// 		$("#exp0").css("visibility","hidden");
+// 		$("#exp0").css("display","none");
+// 		$("#pr2").css("visibility","visible");
+// 		$("#pr2").css("display","inline-block");
+// 		$("#prx2").css("visibility","visible");
+// 		$("#prx2").css("display","inline-block");
+// 		$("#pr2").delay(1200).fadeOut();
+// 		step=5;
+// 	}
+	
+// }
+
+// function calab3()
+// {
+// 	if (step==8)
+// 	{
+// 		$("#exp6cml3").delay(10).fadeOut();
+// 		$("#exp0").css("visibility","hidden");
+// 		$("#exp0").css("display","none");
+// 		$("#pr3").css("visibility","visible");
+// 		$("#pr3").css("display","inline-block");
+// 		$("#prx3").css("visibility","visible");
+// 		$("#prx3").css("display","inline-block");
+// 		$("#pr3").delay(1200).fadeOut();
+// 		step=9;
+// 	}
+	
+	
+// }
+
+// function fnexp() 
+// {	
+// 	if (step==1)
+// 	{
+// 	$("#prx1").css("visibility","hidden");
+// 	$("#prx1").css("display","none");
+// 	$("#exp1").css("visibility","visible");
+// 	$("#exp1").css("display","inline-block");
+// 	step=2;
+// 	}
+// 	if (step==5)
+// 	{
+// 	$("#prx2").css("visibility","hidden");
+// 	$("#prx2").css("display","none");
+// 	$("#exp2").css("visibility","visible");
+// 	$("#exp2").css("display","inline-block");
+// 	step=6;
+	
+// 	}
+// 	if (step==9)
+// 	{
+// 	$("#prx3").css("visibility","hidden");
+// 	$("#prx3").css("display","none");
+// 	$("#exp3").css("visibility","visible");
+// 	$("#exp3").css("display","inline-block");
+// 	step=10;
+// 	}
+// }
+
+// function fnCaleb() 
+// {
+// 	if (step==2)
+// 	{
+// 	$("#CpHval").text("4.01");
+// 	startCounter();
+// 	step=3;
+// 	}
+// 	if (step==6)
+// 	{
+// 	$("#CpHval").text("7.00");
+// 	startCounter();
+// 	step=7;
+// 	}
+// 	if (step==10)
+// 	{
+// 	$("#CpHval").text("9.21");
+// 	startCounter();
+// 	step=11;
+// 	}
+	
+// }
+
+
+// function fnempt() 
+// {
+// 	if (step==3)
+// 	{
+// 		$("#exp1").css("visibility","hidden");
+// 		$("#exp1").css("display","none");
+// 		$("#exp0").css("visibility","visible");
+// 		$("#exp0").css("display","inline-block");
+// 		$("#CpHval").text("0.00");
+// 		step=4;
+// 	}
+// 	if (step==7)
+// 	{
+// 		$("#exp2").css("visibility","hidden");
+// 		$("#exp2").css("display","none");
+// 		$("#exp0").css("visibility","visible");
+// 		$("#exp0").css("display","inline-block");
+// 		$("#CpHval").text("0.00");
+// 		step=8;
+// 	}
+// 	if (step==11)
+// 	{
+// 		$("#exp3").css("visibility","hidden");
+// 		$("#exp3").css("display","none");
+// 		$("#exp0").css("visibility","visible");
+// 		$("#exp0").css("display","inline-block");
+// 		$("#CpHval").text("0.00");
+// 		step=12;
+// 	}
+// }
+
+function startCounter(){
+	$('.counter').each(function (index) {
+		var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+	    $(this).prop('Counter',0).animate({
+	        Counter: $(this).text()
+	    }, {
+	        duration: 2000,
+	        easing: 'swing',
+	        step: function (now) {
+	            $(this).text(parseFloat(now).toFixed(size));
+	        }
+	    });
+	});
+}	
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
