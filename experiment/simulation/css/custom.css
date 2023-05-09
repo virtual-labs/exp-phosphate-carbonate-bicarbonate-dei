@@ -1,0 +1,275 @@
+@import url("fontawesome-4.6.3.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&family=Parisienne&family=Sansita+Swashed:wght@300&family=Roboto:wght@400&family=Raleway&family=Roboto+Mono:ital,wght@1,300&display=swap')
+
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+    height:100%;
+}
+
+body{
+
+  font-family: 'Muli', sans-serif;
+  text-align: justify;
+  color: #555;  
+}
+
+p,h5,h6{
+  font-size: 16px;
+  color: #555;
+}
+
+ol,ul{
+  font-size: 15px;
+  padding-left: 18px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #222;
+}
+
+h1,h2,h3,h4,p,span
+{
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.eq {
+  display: block;
+  font-style: italic;
+}
+
+.zero
+{
+    padding: 0px;
+  margin: 0px;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  height: 100px;
+  display: block;
+  border-bottom: 5px solid red;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.hdmnu{
+text-align: right;
+padding: 32px 50px;
+}
+
+.hdmnu a{
+  color: #337AB7;
+display: inline-block;
+padding: 10px 25px;
+font-size: 15px;
+}
+
+.hdmnu a:hover{
+  border-radius: 5px;
+background-color: #77BB41;
+color: #fff;
+text-decoration: none;
+}
+
+#navbtn
+{
+  height: 95px;
+  border-radius: 0px;
+  width: 75px;
+}
+
+.mnbody
+{
+  margin-top: 100px;
+}
+
+
+.fdbk{
+  margin: 25px 0px;
+  background-color: transparent;
+  color: #269ABC;
+}
+
+
+/* The sidebar menu */
+.sidebar {
+  float: left;
+  min-height: 500px; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border-right: 1px solid #ddd;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  text-align: left;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 21px;
+  color: #337AB7;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sidebar .mnuact{
+  color: red;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  margin-left: 250px;
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 25px;
+  text-align: justify-all;
+
+}
+
+#main h2{
+  color: #2C99CE;
+  text-align: center;
+}
+
+#main p{
+  text-align: justify !important;
+}
+
+
+.exp li, li a
+{
+  font-size: 16px;
+  padding: 8px;
+}
+
+
+
+.hidmain{
+  margin-left: 0 !important;
+}
+
+.hidslid{
+  width:0;
+}
+
+    
+
+.footer{
+  clear: both;
+  background-color: #222;
+}
+
+.footer h4{
+  color: #fff;
+}
+.footer p{
+  color: #fff;
+}
+.comlnk a{
+display: block;
+color: #fff;
+}
+
+
+.cnts p
+{
+  font-size: 15px;
+}
+
+.flos a{
+  color: #fff;
+  display: block;
+}
+
+/* Exam style*/
+
+.quis
+{
+  padding-bottom: 25px;
+}
+.form-check-label
+{
+  font-weight: normal;
+  cursor: pointer;
+}
+.rdlbl{
+  padding-left: 10px;
+}
+
+.vexp{
+  visibility: hidden;
+  padding-left: 10px;
+}
+
+#subans
+{
+  width: 150px;
+  height: 35px;
+}
+
+.ansexp{
+  display: none;
+  padding: 5px 5px 25px 5px; 
+}
+
+#ans
+{
+  color: #4C99CE;
+}
+
+
+.exp6pr{
+  width: 95px; float: right;left: 700px;margin-top:80px;position: absolute;display: none;visibility: hidden;
+}
+
+.exp6exp{
+  width: 500px; float: left;margin-right: 20px;display: none;visibility: hidden;
+}
+
+#exp0{
+  display: block;visibility: visible;
+}
+
+svg {
+  color: #555; /* Or any color of your choice. */
+}
+/*Simulation styles*/
+label.prlabl{
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 990px) 
+{
+
+
+}
+
+
+
+/* CAUTION: IE hackery ahead */
+select::-ms-expand { 
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    } 
+}
