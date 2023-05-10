@@ -25,4 +25,4 @@
   <li>Adjust the pH of the solution by adding NaOH or HCl.</li>
   <li>Measure the pH of the buffer solution with the help of pH meter by dipping the glass electrode in buffer solution.</li>
 </ol>
-<a href="calculator.html" class="btn btn-success" sytle="width:350px;">pH Calculator</a>
+<a href="calculator.html" class="btn btn-success" sytle="width:350px;" target="_blank">pH Calculator</a>
