@@ -1,0 +1,3 @@
+### Aim
+
+The main aim of this lab is to help the students to understand the concept of pH and buffers and to optimally use pH meter to make the buffer solutions with accuracy which is the foundation for successful advanced experiments. To provide the method for the preparation of buffers with precision to deal with molecules and macromolecules that mostly are weak electrolytes of biochemical importance. The lab also will enable the application of the method for the determination of the pH of the soil, various juices, and other products where pH is an important criterion for their purity and optimal function.

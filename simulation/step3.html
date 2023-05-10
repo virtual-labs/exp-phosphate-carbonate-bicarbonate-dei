@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+	<style type="text/css">
+		@font-face{
+		 font-family:'digital-7';
+		 src: url('css/digital-7.ttf');
+		}
+	</style>
+    
+</head>
+<body>
+
+<div class="row zero">
+    <div id="main"> 
+      <div style="height: 55px;font-size: 17px"><p id="masteps">In the last step we measure the pH value of solutions. For this click on Na<sub>2</sub>HPO<sub>4</sub> solution.</p></div>
+      <hr>
+	  <span class="counter" id="CpHval" style="position: absolute;margin-top: 100px;width: 100px;margin-left: 35px;background-color: transparent;border: none;box-shadow: none;font-size: 28px;font-family: 'digital-7', sans-serif;z-index: 5">00.00</span>
+	  <input type="button" id="btnCal" onclick="fnCal();" style="width: 150px;position: absolute;margin-top: 223px;width: 120px;height: 26px;margin-left: 22px;background-color: transparent;border: none;z-index: 5">
+	  <input type="button" id="btnmet" onclick="fnexp();" style="position: absolute;margin-top: 30px;margin-left: 375px;width: 35px;height: 135px;background-color: transparent;border: none;z-index: 5">
+	  <input type="button" id="btnmnflsk" onclick="fnempt();" style="position: absolute;margin-top: 175px;margin-left: 370px;width:90px;height: 95px;background-color:transparent;z-index: 5;border: none;">
+
+
+	  <img src="imgs3/23.png" id="exp0" class="exp6exp">
+	  <img src="imgs3/26.png" id="exp1" class="exp6exp">
+	  <img src="imgs3/24.png" id="prx1" class="exp6exp">
+	  <img src="imgs3/25.png" id="prx2" class="exp6exp">
+	  <img src="imgs3/26.png" id="prx3" class="exp6exp">
+	  <img src="imgs3/30.png" id="prx30" class="exp6exp" style="position: absolute;width: 100px;margin-top: 50px;margin-left: 435px;">
+	  <img src="imgs3/31.png" id="prx31" class="exp6exp" style="position: absolute;width: 100px;margin-top: 50px;margin-left: 435px;">
+	 
+	  
+
+	  <img src="imgs3/27.png" id="prx27" style="position: absolute;margin-left: 600px;margin-top:195px;width: 70px;">
+	  <img src="imgs3/28.png" id="prx28" style="position: absolute;margin-left: 675px;margin-top:195px;width: 70px;">
+	  <img src="imgs3/27-5.png" id="prx275" style="position: absolute;margin-left: 600px;margin-top:138px;width: 70px;">
+	  <img src="imgs3/28-5.png" id="prx285" style="float: left;position: absolute;margin-left: 675px;margin-top:138px;width: 70px;">
+	 
+	  <img src="imgs3/21.png" id="pr1" style="width: 225px;visibility: hidden;position: absolute;margin-left: 435px;margin-top: 50px;">
+	  <img src="imgs3/22.png" id="pr2" style="width: 225px;visibility: hidden;position: absolute;margin-left: 435px;margin-top: 50px;">
+	  <button id="exp6cml2" onclick="calab2();" style="position: absolute;background-color: transparent;border: none;margin-left: 890px;margin-top: 70px;">
+	  	<span id="dark" style="position: absolute;font-size: 12px;background-color: #555;padding: 5px;color: #fff;border-radius: 5px;bottom: -30px;width: 100%;">
+	  	KH<sub>2</sub>PO<sub>4</sub>
+	  </span>
+	  	<img src="imgs3/20.png" style="height: 225px;">
+	  </button>
+	  <button id="exp6cml1"  onclick="calab1();" style="position: absolute;background-color: transparent;border: none;margin-left: 775px;margin-top: 70px;">
+	  	<span id="dark" style="position: absolute;font-size: 12px;background-color: #555;padding: 5px;color: #fff;border-radius: 5px;bottom: -30px;width: 100%;">
+	  	Na<sub>2</sub>HPO<sub>4</sub>
+	  </span>
+	  	<img src="imgs3/19.png" style="height: 225px;">
+	  </button>
+	  
+
+	  <button id="btnorng" onclick="orng();" style="position: absolute;margin-top: 140px;margin-left: 675px;width: 70px;height: 150px;background-color:transparent;border: none;">
+	  </button>
+	  <button id="btnblu" onclick="blu();" style="position: absolute;margin-top: 140px;margin-left: 600px;width: 70px;height: 150px;background-color:transparent;border: none;">
+	  </button>
+		  
+
+		  
+    </div>
+</div>
+
+<script>
+
+var step=0;
+
+function calab1()
+{
+	$("#exp6cml1").delay(10).fadeOut();
+	$("#exp0").css("visibility","hidden");
+	$("#exp0").css("display","none");
+	$("#pr1").css("visibility","visible");
+	$("#pr1").css("display","inline-block");
+	$("#prx1").css("visibility","visible");
+	$("#prx1").css("display","inline-block");
+	$("#pr1").delay(1200).fadeOut();
+	$("#masteps").html("Now click on KH<sub>2</sub>PO<sub>4</sub> solution.");
+	step=1;
+}
+
+function calab2()
+{
+	if (step==1)
+	{
+		$("#exp6cml2").delay(10).fadeOut();
+		$("#prx1").css("visibility","hidden");
+		$("#prx1").css("display","none");
+		$("#exp1").css("visibility","hidden");
+		$("#exp0").css("display","none");
+		$("#pr2").css("visibility","visible");
+		$("#pr2").css("display","inline-block");
+		$("#prx2").css("visibility","visible");
+		$("#prx2").css("display","inline-block");
+		$("#pr2").delay(1200).fadeOut();
+		$("#masteps").text("Now click on pH  glass electrode meter.");
+		step=2;
+	}
+	
+}
+
+function fnexp() 
+{	
+	if (step==2)
+	{
+	$("#prx2").css("visibility","hidden");
+	$("#prx2").css("display","none");
+	$("#prx3").css("visibility","visible");
+	$("#prx3").css("display","inline-block");
+	$("#masteps").text("Now click on check button of pH meter and note the pH value.");
+	step=3;
+	}
+
+
+}
+
+
+
+function fnCal() 
+{	
+
+	x = (Math.random() * 4) + 5;
+	if (step==3)
+	{
+	$("#CpHval").text(x.toFixed(3));
+	startCounter();
+		if (x<7.2) 
+		{
+			step=4;
+		}
+		else if (x>7.2)
+		{
+			step=5;
+		}
+
+		$("#masteps").text("If pH value is less than 7.2, click on NaOH solution and pore few drop of it into target solution. OR if pH value is greater than 7.2, click on HCL solution and pore few drop of it into target solution.");
+	}
+
+	if (step==6)
+	{
+	$("#CpHval").text("7.2");
+	startCounter();
+	$("#masteps").html("&#x2705; Congrats you have perfectly made pH 7.2 buffer solution.");
+	}
+
+	
+
+}
+
+
+function orng() 
+{	
+
+	if (step==5)
+	{
+	$("#prx31").css("visibility","visible");
+	$("#prx31").css("display","inline-block");
+	//$("#prx285").css("visibility","hidden");
+	$("#prx285").delay(5).fadeOut();
+	$("#prx31").delay(2000).fadeOut();
+	$("#prx285").delay(2005).fadeIn().css("margin-left","675px");
+	$("#masteps").text("Now click on check button of pH meter and note the pH value again.");
+	step=6;
+	}
+
+}
+
+function blu() 
+{	
+
+	if (step==4)
+	{
+	$("#prx30").css("visibility","visible");
+	$("#prx30").css("display","inline-block");
+	//$("#prx275").css("visibility","hidden");
+	$("#prx275").delay(5).fadeOut();
+	$("#prx30").delay(2000).fadeOut();
+	$("#prx275").delay(2005).fadeIn().css("margin-left","600px");
+	$("#masteps").text("Now click on check button of pH meter and note the pH value again.");
+	step=6;
+	}
+
+}
+
+
+function startCounter(){
+	$('.counter').each(function (index) {
+		var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+	    $(this).prop('Counter',0).animate({
+	        Counter: $(this).text()
+	    }, {
+	        duration: 2000,
+	        easing: 'swing',
+	        step: function (now) {
+	            $(this).text(parseFloat(now).toFixed(size));
+	        }
+	    });
+	});
+}	
+
+
+</script>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+	<style type="text/css">
+		@font-face{
+		 font-family:'digital-7';
+		 src: url('../src/styles/fonts/digital-7.ttf');
+		}
+		.hdd
+		{
+			visibility: hidden;
+		}
+
+
+		.imflsk16
+		{
+			animation: animName 1s linear infinite;
+		}
+
+		@keyframes animName {
+		 0%{
+		    transform: rotate(-25deg);
+		   }
+		50%{
+		    transform: rotate(25deg);
+		   }
+		  100%{
+		    transform: rotate(-25deg);
+		   }
+		}
+
+
+		#nextstep{
+			visibility: hidden;
+		}
+
+	</style>
+    
+</head>
+<body>
+
+<div class="row zero">
+    <div id="main"> 
+      <div style="height: 55px;font-size: 17px"><p id="masteps">In the second step we generate two 100ml solution of 1.42gm of Na<sub>2</sub>HPO<sub>4</sub> and 1.36gm of KH<sub>2</sub>PO<sub>4</sub>.<br>To start second step click on Na<sub>2</sub>HPO<sub>4</sub> bottle.</p><a id="nextstep" class="btn btn-success" href="step3.html"> Next Step</a>
+      </div>
+      <hr>
+      <span class="counter" id="CpHval" style="position: absolute;margin-top: 277px;width: 100px;margin-left: 75px;background-color: transparent;border: none;box-shadow: none;font-size: 21px;font-family: 'digital-7', sans-serif;z-index: 55">00.00</span>
+	  <img id="wtbknk" src="imgs2/2.png" title="this will be displayed as a tooltip" style="width: 200px;position: absolute;top: 350px">
+	  <img id="wtfll" class="hdd" src="imgs2/3.png" style="width: 200px;position: absolute;top: 337px;">
+	  <img id="imcml1" src="imgs2/5.png" style="width: 75px;position: absolute;top: 350px;margin-left: 250px">
+	  <img id="imcml2" src="imgs2/6.png" style="width: 75px;position: absolute;top: 350px;margin-left: 350px">
+	  <img id="imflsk" src="imgs2/1.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
+	  <img id="imflsk" src="imgs2/1.png" style="width: 125px;position: absolute;top: 180px;margin-left: 650px">
+	  <img id="imflsk15" class="hdd" src="imgs2/15.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
+	  <img id="imflsk15x" class="hdd" src="imgs2/15.png" style="width: 125px;position: absolute;top: 180px;margin-left: 650px">
+	  <img id="imflsk16" class="hdd" src="imgs2/16.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
+
+	  <img id="imflsk16x" class="hdd" src="imgs2/16x.png" style="width: 125px;position: absolute;top: 180px;margin-left: 650px">
+	  <img id="imwtr" src="imgs2/7.png" style="width: 90px;position: absolute;top: 270px;margin-left: 800px">	
+	  <button id="btn-ch1" onclick="step1();" style="border: none;background: transparent;width: 75px;position: absolute;top: 350px;margin-left: 250px;height: 110px;"></button>
+	  <button id="btn-ch2" onclick="step5();" style="border: none;background: transparent;width: 75px;position: absolute;top: 350px;margin-left: 350px;height: 110px;"></button>
+	  <button id="btn-fls" onclick="step4();" style="border: none;background: transparent;width: 125px;position: absolute;top: 180px;margin-left: 500px;height: 280px;"></button>
+	  <button id="btn-wt" onclick="step3();" style="border: none;background: transparent;width: 70px;position: absolute;top: 302px;margin-left: 822px;height: 165px;"></button>
+	  <button id="btn-cmflk" onclick="step2();" style="border: none;background: transparent;width: 105px;position: absolute;top: 332px;margin-left:50px;height: 37px;"></button>  
+	  
+	  <img id="imcmlpr" class="hdd" src="imgs2/10.png" style="height:95px;width: 150px  ;position: absolute;top: 250px;margin-left: 120px;">
+	  <img id="imcml2pr" class="hdd" src="imgs2/105.png" style="height:95px;width: 150px  ;position: absolute;top: 250px;margin-left: 120px;">
+	  <img id="imcmfls" class="hdd" src="imgs2/14.png" style="width: 150px  ;position: absolute;top: 75px;margin-left: 561px;">
+	  <img id="imcmfls2" class="hdd" src="imgs2/14.png" style="width: 150px  ;position: absolute;top: 75px;margin-left: 710px;">
+	  <img id="imwtfls" class="hdd" src="imgs2/13.png" style="width: 220px  ;position: absolute;top: 102px;margin-left: 560px;">
+	  <img id="imwtflsx" class="hdd" src="imgs2/13.png" style="width: 220px  ;position: absolute;top: 102px;margin-left: 710px;">
+	  <span id="dark" style="position: absolute;font-size: 12px;background-color: #555;padding: 5px;color: #fff;border-radius: 5px;margin-left: 513px;width: 100px;text-align: center;margin-top: 345px;">
+	  	Na<sub>2</sub>HPO<sub>4</sub>
+	  </span>
+	  <span id="light" style="position: absolute;font-size: 12px;background-color: #555;padding: 5px;color: #fff;border-radius: 5px;margin-left: 662px;width: 100px;text-align: center;margin-top: 345px;">
+	  	KH<sub>2</sub>PO<sub>4</sub>
+	  </span>
+
+		  
+    </div>
+</div>
+
+<script>
+
+var step=0;
+
+
+
+function step1()
+{
+	$("#wtbknk").css("visibility","hidden");
+	$("#imcml1").css("visibility","hidden");
+	$("#imcmlpr").css("visibility","visible");
+	$("#imcmlpr").delay(2500).fadeOut();
+	$("#wtfll").css("visibility","visible");
+	$("#pr1").delay(50).fadeOut();
+	$("#CpHval").text("1.42");
+	startCounter();
+	$("#masteps").text("Click on the chemical compound placed on weight machine.");
+	step=1;
+}
+function step5()
+{
+	if (step==4)
+	{
+	$("#wtbknk").css("visibility","hidden");
+	$("#imcml2").css("visibility","hidden");
+	$("#imcml2pr").css("visibility","visible");
+	$("#imcml2pr").delay(2500).fadeOut();
+	$("#wtfll").css("visibility","visible");
+	$("#pr1").delay(50).fadeOut();
+	$("#CpHval").text("1.36");
+	startCounter();
+	step=5;
+	}
+}
+function step2()
+{	if (step==1)
+	{
+		
+		$("#imcmfls").css("visibility","hidden");
+		$("#wtfll").css("visibility","hidden");
+		$("#wtbknk").css("visibility","visible");
+		$("#imcmfls").css("visibility","visible");
+		$("#imcmfls").delay(800).fadeOut();
+		$("#wtbknk").css("visibility","visible");
+		$("#imflsk15").css("visibility","visible");
+		$("#imflsk15").delay(500).fadeIn();
+		$("#CpHval").text("0.00");
+		startCounter();
+		$("#masteps").text("Click on water bottle to fill up the flask upto 100ml.");
+		step=2;
+	}
+
+	if (step==5)
+	{
+		
+		$("#imcmfls2").css("visibility","hidden");
+		$("#wtfll").css("visibility","hidden");
+		$("#wtbknk").css("visibility","visible");
+		$("#imcmfls2").css("visibility","visible");
+		$("#imcmfls2").delay(800).fadeOut();
+		$("#wtbknk").css("visibility","visible");
+		$("#imflsk15x").css("visibility","visible");
+		$("#imflsk15x").delay(500).fadeIn();
+		$("#CpHval").text("0.00");
+		startCounter();
+		step=6;
+	}
+}
+
+function step3()
+{	if (step==2)
+	{
+		$("#imwtr").delay(10).fadeOut();
+		$("#imwtfls").css("visibility","visible");
+		$("#imflsk16").css("visibility","visible");
+		$("#imflsk15").delay(800).fadeOut();
+		$("#imwtfls").delay(1000).fadeOut();
+		$("#imflsk16").delay(800).fadeIn();
+		$("#imwtr").delay(1000).fadeIn();
+		$("#masteps").html("Click on Na<sub>2</sub>HPO<sub>4</sub> solution to shake it well.");
+		step=3;
+	}
+
+	if (step==6)
+	{
+		$("#imwtr").delay(10).fadeOut();
+		$("#imwtflsx").css("visibility","visible");
+		$("#imflsk16x").css("visibility","visible");
+		$("#imflsk15x").delay(800).fadeOut();
+		$("#imwtflsx").delay(1000).fadeOut();
+		$("#imflsk16x").delay(800).fadeIn();
+		$("#imwtr").delay(1000).fadeIn();
+		$("#masteps").text("Both solutions have been made. Now click on next for third step.");
+		$("#nextstep").css("visibility","visible");
+		step=7;
+	}
+}
+
+function step4()
+{	if (step==3)
+	{
+		$("#imflsk").css("visibility","hidden");
+		$('#imflsk16').addClass('imflsk16');
+		setTimeout(function(){
+		    $('#imflsk16').removeClass('imflsk16');
+		},2000);
+		// $("#imflsk16").addClass("imflsk16");
+		// $("#imflsk16").delay(1200).removeClass("imflsk16");
+		step=4;
+		$("#masteps").html("Repeat same steps again to make 100ml KH<sub>2</sub>PO<sub>4</sub> solution.");
+
+	}
+
+	if (step==7)
+	{
+		$("#imflskx").css("visibility","hidden");
+		$('#imflsk16x').addClass('imflsk16');
+		setTimeout(function(){
+		    $('#imflsk16x').removeClass('imflsk16');
+		},2000);
+		// $("#imflsk16").addClass("imflsk16");
+		// $("#imflsk16").delay(1200).removeClass("imflsk16");
+		step=8;
+		
+
+	}
+}
+
+function startCounter(){
+	$('.counter').each(function (index) {
+		var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+	    $(this).prop('Counter',0).animate({
+	        Counter: $(this).text()
+	    }, {
+	        duration: 2000,
+	        easing: 'swing',
+	        step: function (now) {
+	            $(this).text(parseFloat(now).toFixed(size));
+	        }
+	    });
+	});
+}	
+
+
+</script>
+
+</body>
+</html>
+
+
+
+

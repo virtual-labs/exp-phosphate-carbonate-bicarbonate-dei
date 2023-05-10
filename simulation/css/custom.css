@@ -1,0 +1,79 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+    height:100%;
+}
+
+body{
+
+  font-family: 'Muli', sans-serif;
+  text-align: justify;
+  color: #555;  
+
+}
+
+.zero{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+h2{
+  color: #2C99CE;
+  text-align: center;
+}
+
+p{
+  font-size: 18px;
+  color: #666;
+  text-align: justify !important;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+
+  min-width: 1000px;
+  padding: 25px 50px;
+  min-height: 100vh;
+  text-align: justify-all;
+}
+
+
+
+
+.exp6pr{
+  width: 95px; margin-left:430px;margin-top:80px;position: absolute;display: none;visibility: hidden;
+}
+
+.exp6exp{
+  position: absolute;width: 500px; display: none;visibility: hidden;
+}
+
+#exp0{
+  display: block;visibility: visible;
+}
+
+
+@media only screen and (max-width: 990px) 
+{
+
+
+}
+
+
+
+/* CAUTION: IE hackery ahead */
+select::-ms-expand { 
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    } 
+}
