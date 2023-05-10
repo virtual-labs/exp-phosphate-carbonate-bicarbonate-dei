@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<link rel="stylesheet" type="text/css" href="simulation/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="simulation/css/custom.css">
+    <script src="simulation/js/jquery.min.js"></script>
+    <script src="simulation/js/bootstrap.min.js"></script>
+ 
+ <style>
+ 	.ansexp{
+ 		display: none;
+ 	}
+ 	.ansexp h5
+ 	{
+ 		color: green;
+ 		font-weight: bold;
+ 	}
+ 	.ansexp p
+ 	{
+ 		font-size: 14px;
+ 		color: #666;
+ 	}
+ 	.prlabl
+ 	{
+ 		font-weight: normal;
+ 	}
+ </style>   
+
+</head>
+<body>
+<div class="row zero">
+        <div style="max-width: 500px !important;border: 1px solid #aaa;padding: 25px 50px;margin: auto;margin-top: 25px;margin-bottom: 25px;"> 
+          <h3 style="text-align: center;color: #666;">Calculation of the pH value. </h3>
+          <hr>
+
+		  <div class="form-group">
+			  <label class="prlabl">Enter the molar concentrations concentration of the acid in the solution.</label>
+			  <input type="text" class="form-control" id="soln">
+		  </div>
+		  <div class="form-group">
+			  <label class="prlabl">Enter the molar concentrations of the conjugate base of the acid in the solution.</label>
+			  <input type="text" class="form-control" id="base">
+		  </div>
+		  <div class="form-group">
+			  <label class="prlabl">Enter the acid dissociation constant (Ka).</label>
+			  <input type="text" class="form-control" id="cnst">
+		  </div>
+		  
+		  <div class="form-group">
+			  <button class="btn btn-success" id="eval">Calculate</button>
+		  </div>
+
+		  <div class="ansexp">
+		  	  <h3>Solution</h3>
+		  	  <h5 id="ans"></h5>
+		  	  <p>The pH value is calculated using Henderson Hasselbalch equation:</p>
+			  <img src = "imgs/eq1.svg" alt="My Happy SVG"/>
+			  
+			  
+		  </div>
+
+        </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#navbtn").click(function(){
+    $("#soln").toggleClass("hidmain");
+    $("#mySidebar").toggleClass("hidslid");
+    
+  });
+
+
+  $("#eval").click(function(){
+    soln=$("#soln").val();
+    base=$("#base").val();
+    cnst=$("#cnst").val();
+    ka=-Math.log10(cnst)
+    ph=ka + Math.log10(base/soln) 
+    $(".ansexp").css('display','block'); 
+    $("#ans").text('The pH value of given solution is = '+ph);
+
+    
+  });
+
+
+
+});
+</script>
+
+</body>
+</html>
+
+
+
+
