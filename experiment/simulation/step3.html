@@ -12,15 +12,21 @@
 		 font-family:'digital-7';
 		 src: url('css/digital-7.ttf');
 		}
+		#nextstep{
+			visibility: hidden;
+		}
 	</style>
     
 </head>
 <body>
 
 <div class="row zero">
-    <div id="main"> 
-      <div style="height: 55px;font-size: 17px"><p id="masteps">In the last step we measure the pH value of solutions. For this click on Na<sub>2</sub>HPO<sub>4</sub> solution.</p></div>
-      <hr>
+		<div id="leftPanel">
+			<button onclick=location.reload(); class="btn btn-warning" style="width:225px;margin-bottom: 15px;">Reset</button>
+			<p id="masteps">In the last step we measure the pH value of solutions. For this click on Na<sub>2</sub>HPO<sub>4</sub> solution.</p>
+			<a id="nextstep" class="btn btn-success" href="calculator.html">Calculator</a>
+		</div>
+		<div id="main"> 
 	  <span class="counter" id="CpHval" style="position: absolute;margin-top: 100px;width: 100px;margin-left: 35px;background-color: transparent;border: none;box-shadow: none;font-size: 28px;font-family: 'digital-7', sans-serif;z-index: 5">00.00</span>
 	  <input type="button" id="btnCal" onclick="fnCal();" style="width: 150px;position: absolute;margin-top: 223px;width: 120px;height: 26px;margin-left: 22px;background-color: transparent;border: none;z-index: 5">
 	  <input type="button" id="btnmet" onclick="fnexp();" style="position: absolute;margin-top: 30px;margin-left: 375px;width: 35px;height: 135px;background-color: transparent;border: none;z-index: 5">
@@ -148,6 +154,7 @@ function fnCal()
 	$("#CpHval").text("7.2");
 	startCounter();
 	$("#masteps").html("&#x2705; Congrats you have perfectly made pH 7.2 buffer solution.");
+	$("#nextstep").css("visibility","visible");
 	}
 
 	

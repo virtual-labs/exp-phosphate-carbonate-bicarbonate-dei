@@ -33,12 +33,20 @@ p{
 
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#leftPanel{
+  padding: 10px;
+  float: left;
+  width:250px;
+  height: 500px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-
+  float: left;
   min-width: 1000px;
-  padding: 25px 50px;
+  padding: 50px;
   min-height: 100vh;
   text-align: justify-all;
+  border-left: 1px solid #ccc;
 }
 
 

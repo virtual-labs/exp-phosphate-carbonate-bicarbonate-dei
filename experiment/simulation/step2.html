@@ -12,7 +12,7 @@
 		 font-family:'digital-7';
 		 src: url('../src/styles/fonts/digital-7.ttf');
 		}
-		.hdd
+		.dsphdd
 		{
 			visibility: hidden;
 		}
@@ -46,22 +46,23 @@
 <body>
 
 <div class="row zero">
-    <div id="main"> 
-      <div style="height: 55px;font-size: 17px"><p id="masteps">In the second step we generate two 100ml solution of 1.42gm of Na<sub>2</sub>HPO<sub>4</sub> and 1.36gm of KH<sub>2</sub>PO<sub>4</sub>.<br>To start second step click on Na<sub>2</sub>HPO<sub>4</sub> bottle.</p><a id="nextstep" class="btn btn-success" href="step3.html"> Next Step</a>
-      </div>
-      <hr>
-      <span class="counter" id="CpHval" style="position: absolute;margin-top: 277px;width: 100px;margin-left: 75px;background-color: transparent;border: none;box-shadow: none;font-size: 21px;font-family: 'digital-7', sans-serif;z-index: 55">00.00</span>
+		<div id="leftPanel">
+			<button onclick=location.reload(); class="btn btn-warning" style="width:225px;margin-bottom: 15px;">Reset</button>
+			<p id="masteps">In the second step we generate two 100ml solution of 1.42gm of Na<sub>2</sub>HPO<sub>4</sub> and 1.36gm of KH<sub>2</sub>PO<sub>4</sub>.<br>To start second step click on Na<sub>2</sub>HPO<sub>4</sub> bottle.</p> <a id="nextstep" class="btn btn-success" href="step3.html"> Next Step</a>
+		</div>
+		<div id="main"> 
+      <span class="counter" id="CpHval" style="position: absolute;margin-top: 350px;width: 100px;margin-left: 75px;background-color: transparent;border: none;box-shadow: none;font-size: 21px;font-family: 'digital-7', sans-serif;z-index: 55">00.00</span>
 	  <img id="wtbknk" src="imgs2/2.png" title="this will be displayed as a tooltip" style="width: 200px;position: absolute;top: 350px">
-	  <img id="wtfll" class="hdd" src="imgs2/3.png" style="width: 200px;position: absolute;top: 337px;">
+	  <img id="wtfll" class="dsphdd" src="imgs2/3.png" style="width: 200px;position: absolute;top: 337px;">
 	  <img id="imcml1" src="imgs2/5.png" style="width: 75px;position: absolute;top: 350px;margin-left: 250px">
 	  <img id="imcml2" src="imgs2/6.png" style="width: 75px;position: absolute;top: 350px;margin-left: 350px">
 	  <img id="imflsk" src="imgs2/1.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
 	  <img id="imflsk" src="imgs2/1.png" style="width: 125px;position: absolute;top: 180px;margin-left: 650px">
-	  <img id="imflsk15" class="hdd" src="imgs2/15.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
-	  <img id="imflsk15x" class="hdd" src="imgs2/15.png" style="width: 125px;position: absolute;top: 180px;margin-left: 650px">
-	  <img id="imflsk16" class="hdd" src="imgs2/16.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
+	  <img id="imflsk15" class="dsphdd" src="imgs2/15.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
+	  <img id="imflsk15x" class="dsphdd" src="imgs2/15.png" style="width: 125px;position: absolute;top: 180px;margin-left: 650px">
+	  <img id="imflsk16" class="dsphdd" src="imgs2/16.png" style="width: 125px;position: absolute;top: 180px;margin-left: 500px">
 
-	  <img id="imflsk16x" class="hdd" src="imgs2/16x.png" style="width: 125px;position: absolute;top: 180px;margin-left: 650px">
+	  <img id="imflsk16x" class="dsphdd" src="imgs2/16x.png" style="width: 125px;position: absolute;top: 180px;margin-left: 650px">
 	  <img id="imwtr" src="imgs2/7.png" style="width: 90px;position: absolute;top: 270px;margin-left: 800px">	
 	  <button id="btn-ch1" onclick="step1();" style="border: none;background: transparent;width: 75px;position: absolute;top: 350px;margin-left: 250px;height: 110px;"></button>
 	  <button id="btn-ch2" onclick="step5();" style="border: none;background: transparent;width: 75px;position: absolute;top: 350px;margin-left: 350px;height: 110px;"></button>
@@ -69,16 +70,16 @@
 	  <button id="btn-wt" onclick="step3();" style="border: none;background: transparent;width: 70px;position: absolute;top: 302px;margin-left: 822px;height: 165px;"></button>
 	  <button id="btn-cmflk" onclick="step2();" style="border: none;background: transparent;width: 105px;position: absolute;top: 332px;margin-left:50px;height: 37px;"></button>  
 	  
-	  <img id="imcmlpr" class="hdd" src="imgs2/10.png" style="height:95px;width: 150px  ;position: absolute;top: 250px;margin-left: 120px;">
-	  <img id="imcml2pr" class="hdd" src="imgs2/105.png" style="height:95px;width: 150px  ;position: absolute;top: 250px;margin-left: 120px;">
-	  <img id="imcmfls" class="hdd" src="imgs2/14.png" style="width: 150px  ;position: absolute;top: 75px;margin-left: 561px;">
-	  <img id="imcmfls2" class="hdd" src="imgs2/14.png" style="width: 150px  ;position: absolute;top: 75px;margin-left: 710px;">
-	  <img id="imwtfls" class="hdd" src="imgs2/13.png" style="width: 220px  ;position: absolute;top: 102px;margin-left: 560px;">
-	  <img id="imwtflsx" class="hdd" src="imgs2/13.png" style="width: 220px  ;position: absolute;top: 102px;margin-left: 710px;">
-	  <span id="dark" style="position: absolute;font-size: 12px;background-color: #555;padding: 5px;color: #fff;border-radius: 5px;margin-left: 513px;width: 100px;text-align: center;margin-top: 345px;">
+	  <img id="imcmlpr" class="dsphdd" src="imgs2/10.png" style="height:95px;width: 150px  ;position: absolute;top: 250px;margin-left: 120px;">
+	  <img id="imcml2pr" class="dsphdd" src="imgs2/105.png" style="height:95px;width: 150px  ;position: absolute;top: 250px;margin-left: 120px;">
+	  <img id="imcmfls" class="dsphdd" src="imgs2/14.png" style="width: 150px  ;position: absolute;top: 75px;margin-left: 561px;">
+	  <img id="imcmfls2" class="dsphdd" src="imgs2/14.png" style="width: 150px  ;position: absolute;top: 75px;margin-left: 710px;">
+	  <img id="imwtfls" class="dsphdd" src="imgs2/13.png" style="width: 220px  ;position: absolute;top: 102px;margin-left: 560px;">
+	  <img id="imwtflsx" class="dsphdd" src="imgs2/13.png" style="width: 220px  ;position: absolute;top: 102px;margin-left: 710px;">
+	  <span id="dark" style="position: absolute;font-size: 12px;background-color: #555;padding: 5px;color: #fff;border-radius: 5px;margin-left: 513px;width: 100px;text-align: center;margin-top: 420px;">
 	  	Na<sub>2</sub>HPO<sub>4</sub>
 	  </span>
-	  <span id="light" style="position: absolute;font-size: 12px;background-color: #555;padding: 5px;color: #fff;border-radius: 5px;margin-left: 662px;width: 100px;text-align: center;margin-top: 345px;">
+	  <span id="light" style="position: absolute;font-size: 12px;background-color: #555;padding: 5px;color: #fff;border-radius: 5px;margin-left: 662px;width: 100px;text-align: center;margin-top: 420px;">
 	  	KH<sub>2</sub>PO<sub>4</sub>
 	  </span>
 
