@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The Henderson Hasselbalch equation explains the relationship between-?",
+      "answers": {
+        "a": "pH and pOH",
+        "b": "pH and logKa",
+        "c": "pH and pKa",
+        "d": "pOH and pKa"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Three unknown solutions are given with pH value of 6, 8 & 9.5 respectively. Which solution will contain the maximum OH- ion??",
+      "answers": {
+        "a": "Solution sample-1",
+        "b": "Solution sample-2",
+        "c": "Solution sample-3",
+        "d": "Data are insufficient"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is not a type of Acidic buffer mixture?",
+      "answers": {
+        "a": " Na0HPO4 + Na3PO4",
+        "b": "CH3COOH + CH3COONa",
+        "c": "H2CO3 + Na2CO3",
+        "d": "H3PO4 + NaH2PO4"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
