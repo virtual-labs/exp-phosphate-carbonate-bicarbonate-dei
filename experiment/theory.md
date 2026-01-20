@@ -66,40 +66,40 @@ pH = pKa + log (salt)(acid)
 ## Mechanism of Acidic Buffer:
 An acidic buffer is prepared by mixing equimolar amounts of weak acid and a slat of weak acid and strong base. E.g. consider an acidic buffer obtained by mixing acetic acid and sodium acetate.
 
-CH<sub>3</sub>COOH &rarr; CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup><br>
-CH<sub>3</sub>COONaH &rarr; CH<sub>3</sub>COO<sup>-</sup> + Na<sup>+</sup>
+CH<sub>3</sub>COOH(aq) &rlhar; CH<sub>3</sub>COO<sup>-</sup>(aq) + H<sup>+</sup>(aq)<br>
+CH<sub>3</sub>COONa(aq) &rarr; CH<sub>3</sub>COO<sup>-</sup>(aq) + Na<sup>+</sup>(aq)
 
 Acetic acid, being a weak acid, ionizes to a less extent while sodium acetate, being a strong electrolyte, ionizes completely. When a small amount of HCl is added to it, the added H<sup>+</sup> ions combine with acetate ions to form acetic acid molecules. Thus, the pH of the buffer remains unchanged.
 
-HCl &rarr; H<sup>+</sup> + Cl<sup>-</sup><br>
-CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup>&rarr; CH<sub>3</sub>COO
+HCl(aq) &rarr; H<sup>+</sup>(aq) + Cl<sup>-</sup>(aq)<br>
+CH<sub>3</sub>COO<sup>-</sup>(aq) + H<sup>+</sup>(aq)&rarr; CH<sub>3</sub>COOH(aq)
 
 Thus phenomenon is called reverse basicity due to acetate ions. On addition to small amount of strong base like NaOH, the following reactions occur
 
-NaOH &rarr; Na<sup>+</sup> + OH<sup>-</sup><br>
-H<sup>+ </sup>+ OH<sup>-</sup> &rarr; H<sub>2</sub>O<br>
-CH<sub>3</sub>COOH&rarr; CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup><br>
-CH<sub>3</sub>COOH + OH<sup>-</sup> &rarr; CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O
+NaOH(aq) &rarr; Na<sup>+</sup>(aq) + OH<sup>-</sup>(aq)<br>
+H<sup>+ </sup>(aq)+ OH<sup>-</sup>(aq) &rarr; H<sub>2</sub>O(l)<br>
+CH<sub>3</sub>COOH(aq)&rarr; CH<sub>3</sub>COO<sup>-</sup>(aq) + H<sup>+</sup>(aq)<br>
+CH<sub>3</sub>COOH(aq) + OH<sup>-</sup> (aq)&rarr; CH<sub>3</sub>COO<sup>-</sup>(aq) + H<sub>2</sub>O(l)
 
 The combination of H<sup>+</sup> of CH<sub>3</sub>COOH with OH<sup>-</sup> disturbs the equilibrium position of acetic acid. Therefore, to maintain its Ka constant it dissociates to a greater extent. Thus, the OH<sup>-</sup> ions combine with acetic acid thereby maintaining the pH of the buffer. This phenomenon is called reverse acidity due to acetic acid.
 
 ## Mechanism of Basic Buffer
 Basic buffer is prepared by mixing equimolar amount of weak base and a salt of a weak base and strong acid. E.g. consider the basic buffer obtained by mixing ammonium hydroxide and ammonium chloride
 
-NH<sub>4</sub>OH &rarr; NH<sub>4</sub><sup>+</sup> + OH<sup>-</sup><br>
-NH<sub>4</sub>Cl &rarr; NH<sub>4</sub><sup>+</sup> + Cl<sup>-</sup>
+NH<sub>3</sub>(aq)+H<sub>2</sub>O(l) &rarr; NH<sub>4</sub><sup>+</sup>(aq) + OH<sup>-</sup>(aq)<br>
+NH<sub>4</sub>Cl(aq) &rarr; NH<sub>4</sub><sup>+</sup>(aq) + Cl<sup>-</sup>(aq)
 
 NH<sub>4</sub>OH, being a weak base, ionizes to a less extent while NH<sub>4</sub>Cl being a strong electrolyte ionizes almost completely. When a small amount of strong acid like HCl is added, the H<sup>+</sup> ions combine with OH<sup>-</sup> to form un-dissociated water molecules. However, to maintain Ka constant, NH<sub>4</sub>OH dissociates more thus removing H<sup>+</sup> ions.
 
-HCl &rarr; H<sup>+</sup> + Cl<sup>-</sup><br>
-H<sup>+</sup> + OH<sup>-</sup> &rarr; H<sub>2</sub>O<br>
-NH<sub>4</sub>OH &rarr; NH<sub>4</sub> <sup>+</sup> + OH<sup>-</sup><br>
-NH<sub>4</sub>OH + H<sup>+</sup>&rarr; NH<sub>4</sub><sup>+</sup> + H<sub>2</sub>O
+HCl(aq) &rarr; H<sup>+</sup>(aq) + Cl<sup>-</sup>(aq)<br>
+H<sup>+</sup>(aq) + OH<sup>-</sup>(aq) &rarr; H<sub>2</sub>O(l)<br>
+NH<sub>4</sub>OH(aq) &rarr; NH<sub>4</sub> <sup>+</sup>(aq) + OH<sup>-</sup>(aq)<br>
+NH<sub>4</sub>OH(aq) + H<sup>+</sup>(aq)&rarr; NH<sub>4</sub><sup>+</sup>(aq) + H<sub>2</sub>O(l)
 
 On addition of a small amount of a strong base, the following reaction occurs.
 
-NaOH &rarr; Na<sup>+</sup> + OH<sup>-</sup><br>
-NH<sub>4</sub>+ + OH<sup>-</sup> &rarr; NH<sub>4</sub>OH
+NaOH(aq) &rarr; Na<sup>+</sup>(aq) + OH<sup>-</sup>(aq)<br>
+NH<sub>4</sub><sup>+</sup>(aq) + OH<sup>-</sup>(aq) &rarr; NH<sub>4</sub>OH(aq)
 
 Thus the OH<sup>-</sup> ions are removed by NH4+ ions thereby maintaining the pH constant. This is called reserved acidity due to NH<sub>4</sub><sup>+</sup> ions.
 
@@ -124,7 +124,7 @@ Buffer capacity is maximum when pH = pKa
 
 **Numerical Example:** 
 - Preparation of Phosphate Buffer (0.1 M, pH 7.2):
-- Using the Henderson–Hasselbalch equation:
+- Using the Henderson-Hasselbalch equation:
 
 pH = pK<sub>a</sub> + log ([A<sup>-</sup>] / [HA])
 
@@ -144,4 +144,4 @@ Hence, equal molar concentrations of disodium hydrogen phosphate (Na₂HPO₄) a
 3. Mix equal volumes of the two solutions (1:1 ratio).
 
 Verify the pH using a pH meter and adjust slightly, if required, with dilute NaOH or HCl.
-This example not only reinforces the application of the Henderson–Hasselbalch equation but also provides a clear procedural link between theory and experiment, making the exercise more interactive and easier for beginners to follow.
+This example not only reinforces the application of the Henderson-Hasselbalch equation but also provides a clear procedural link between theory and experiment, making the exercise more interactive and easier for beginners to follow.
